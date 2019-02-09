@@ -46,16 +46,13 @@ After some time, now the cluster size is 10 ! <br>
 
 ![autoscale-3](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/autoscale-3.png)
 
+# Stop the Load test
+Once the load test is stopped, wait for atleast 15-30 mins to see that the nodes are removed from the cluster and the cluster comes back to initial state
+![autoscale-1](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/autoscale-1.png)
 
+# Performance test details
+We started the test with 250 users. The initial cluster size was 3. As a result of autoscaling, more hardware was added and as a result, the response time decreased and the the throughput increased. See the below charts:
 
+![report-charts](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/report-charts.png)
 
-
-
-
-
-
-
-
-
-
-
+![report-summary](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/report-summary.png)
