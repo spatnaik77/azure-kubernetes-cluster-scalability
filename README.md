@@ -34,6 +34,27 @@ Following configuration files will be used:
 # Verify Horizontal pod autoscaler, Pods And Nodes of the cluster
 ![autoscale-1](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/autoscale-1.png)
 
+# Start the Load test
+You can use the cloud load tester available in Azure devops. Use the sidd-k8s-test.jmx for the test. This jmx script creates 25 threads so you can choose 10 agents to run the test which will simulate 250 concurrent users. select 30 mins as the duration of the test
+
+# Monitor the auto scaling
+Once the load test starts, periodically monitor the CPU usage of nodes, number of POD instances, number of node instances etc. You will see that pods and nodes are getting added gradually. See the below pictures:
+
+![autoscale-3](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/autoscale-2.png)
+
+After some time, now the cluster size is 10 ! <br>
+
+![autoscale-3](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/autoscale-3.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
