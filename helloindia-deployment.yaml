@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloindia
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: helloindia
+  template:
+    metadata:
+      labels:
+        app: helloindia
+    spec:
+      containers:
+        - name: helloindia
+          image: spatnaik77/helloindia:1
+          resources:
+            requests:
+              cpu: 512m
+              memory: 1024Mi
+            limits:
+              cpu: 512m
+              memory: 1024Mi
+          ports:
+          - containerPort: 8080
+          
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 5  
