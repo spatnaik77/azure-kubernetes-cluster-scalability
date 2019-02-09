@@ -15,7 +15,23 @@ In this POC we will do the following:
 # Create AKS Cluster
 While writing this article (Feb 10, 2019), the cluster autoscaler is in preview mode.
 Open azure cloud shell <br>
-install the aks-preview Azure CLI extension using command : az extension add --name aks-preview <br>
+* install the aks-preview Azure CLI extension using command : <br>
+* <b>az extension add --name aks-preview</b> <br>
+* Create AKS cluster <br>
+* <b> az aks create --resource-group sidd-aks-poc-rg --name sidd-aks-poc-cluster2 --kubernetes-version 1.12.4 --node-count 3 --enable-vmss --enable-cluster-autoscaler --min-count 3 --max-count 10 </b> <br>
+
+# Create Deployment & Load balancer
+Following configuration files will be used:
+* helloindia-deployment.yaml - Deployment for helloindia
+* helloindia-service.yaml - Load balancer for helloindia service
+* Create deployment :   <b>kubectl apply -f helloworld-deployment.yaml</b>
+* Create service : <b>kubectl apply -f helloworld-service.yaml</b>
+
+# Create Pod Autoscaler
+* Create pod autoscaler. Min pods as 5 and Max as 40. Whenver CPU goes beyond 50%, try adding more pods
+* Use this command :  <b>kubectl autoscale deployment helloindia --cpu-percent=50 --min=5 --max=40 </b>
+
+
 
 
 
