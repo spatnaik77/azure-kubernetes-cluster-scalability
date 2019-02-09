@@ -9,3 +9,11 @@ In this POC we will do the following:
 * Create a performance test and generate enough load on the cluster by sending huge number of requests from hundreds of clients
 * Monitor the Pod and Cluster autoscaler. New Pods should get scheduled and new nodes should get added to the cluster
 * Stop the test. Pods and nodes should get released and the cluster should come back to normal state
+
+# Create AKS Cluster
+While writing this article (Feb 10, 2019), the cluster autoscaler is in preview mode.
+Open azure cloud shell <br>
+install the aks-preview Azure CLI extension using command : az extension add --name aks-preview <br>
+
+
+
