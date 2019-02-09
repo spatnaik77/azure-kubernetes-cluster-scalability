@@ -31,6 +31,9 @@ Following configuration files will be used:
 * Create pod autoscaler. Min pods as 5 and Max as 40. Whenver CPU goes beyond 50%, try adding more pods
 * Use this command :  <b>kubectl autoscale deployment helloindia --cpu-percent=50 --min=5 --max=40 </b>
 
+# Verify Horizontal pod autoscaler, Pods And Nodes of the cluster
+![autoscale-1](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/autoscale-1.png)
+
 
 
 
