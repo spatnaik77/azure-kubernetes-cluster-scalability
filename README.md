@@ -57,3 +57,7 @@ We started the test with 250 users. The initial cluster size was 3. As a result 
 ![report-charts](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/report-charts.png)
 
 ![report-summary](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/report-summary.png)
+
+# References
+https://docs.microsoft.com/en-gb/azure/aks/cluster-autoscaler .  <br>
+https://docs.microsoft.com/en-gb/azure/aks/scale-cluster
