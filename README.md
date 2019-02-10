@@ -4,6 +4,7 @@ To keep up with application demands in Azure Kubernetes Service (AKS), you may n
 ![aks-cluster-autoscaler](https://github.com/spatnaik77/azure-kubernetes-cluster-scalability/blob/master/diagrams/aks-cluster-autoscaler.png)
 <hr>
 In this POC we will do the following:
+
 * We will use this docker - https://cloud.docker.com/u/spatnaik77/repository/docker/spatnaik77/helloindia . It exposes a REST API which returns "hello india"
 * Create an AKS cluster with min node as 3 and maximum node as 10. 
 * Create a deployment and load balancer to expose the rest APIs
