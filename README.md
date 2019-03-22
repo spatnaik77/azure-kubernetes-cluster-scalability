@@ -19,7 +19,7 @@ Open azure cloud shell <br>
 * install the aks-preview Azure CLI extension using command : <br>
 * <b>az extension add --name aks-preview</b> <br>
 * Create AKS cluster <br>
-* <b> az aks create --resource-group sidd-aks-poc-rg --name sidd-aks-poc-cluster2 --kubernetes-version 1.12.4 --node-count 3 --enable-vmss --enable-cluster-autoscaler --min-count 3 --max-count 10 </b> <br>
+* <b> az aks create --resource-group sidd-aks-poc-rg --name sidd-aks-poc-cluster2 --kubernetes-version 1.12.6 --node-count 3 --enable-vmss --enable-cluster-autoscaler --min-count 3 --max-count 10 </b> <br>
 
 # Create Deployment & Load balancer
 Following configuration files will be used:
